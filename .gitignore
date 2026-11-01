@@ -1,0 +1,6 @@
+.env
+.cache/
+__pycache__/
+inbox/*
+!inbox/.gitkeep
+data/snapshots/*.json

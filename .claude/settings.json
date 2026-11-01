@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 tools/taxonomy.py:*)",
+      "Bash(python3 tools/search_comps.py:*)",
+      "Bash(python3 tools/get_listings.py:*)",
+      "Bash(python3 tools/get_traffic.py:*)",
+      "Bash(python3 tools/store_snapshot.py:*)",
+      "Bash(python3 tools/list_drafts.py:*)",
+      "Bash(python3 tools/create_draft.py:*)",
+      "Read(./inbox/**)",
+      "Read(./data/**)",
+      "Write(./data/**)"
+    ],
+    "ask": [
+      "Bash(python3 tools/publish_draft.py:*)",
+      "Bash(python3 tools/update_listing.py:*)",
+      "Bash(python3 tools/end_listing.py:*)",
+      "Bash(python3 tools/auth_setup.py:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.cache/**)"
+    ]
+  }
+}

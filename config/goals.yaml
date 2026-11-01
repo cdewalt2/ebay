@@ -1,0 +1,34 @@
+# Your store goals: the manager and monitor agents enforce these.
+# Edit freely. All money in USD.
+
+marketplace_id: EBAY_US
+currency: USD
+
+# --- Profit goals ---
+min_profit_per_item: 15.00     # don't list/keep items that net less than this
+min_margin_pct: 30             # profit / sale price
+target_margin_pct: 45
+
+# --- Velocity goals ---
+target_days_to_sell: 30
+max_days_listed: 90            # beyond this with weak engagement → consider ending
+review_every_days: 7
+
+# --- Fees (VERIFY against your eBay account/category; these are rough defaults) ---
+final_value_fee_pct: 13.6      # incl. typical category FVF; varies by category & store level
+fixed_fee_per_order: 0.40
+promoted_listing_pct: 0        # set if you use Promoted Listings Standard
+avg_shipping_cost_absorbed: 0  # if you offer free shipping, your average label cost
+
+# --- Pricing strategy for new drafts ---
+# competitive: ~25th percentile of active comps (sell fast)
+# market:      ~median (balanced)
+# premium:     ~75th percentile (max profit; use for excellent condition / rare)
+pricing_strategy: market
+use_best_offer: true
+best_offer_auto_accept_pct: 92  # of list price
+best_offer_auto_decline_pct: 75
+
+# --- Markdown rules the monitor follows ---
+markdown_step_pct: 10           # typical single price cut
+max_total_markdown_pct: 35      # from original list price
